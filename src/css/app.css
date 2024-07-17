@@ -1,25 +1,73 @@
 #app {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  min-height: 100vh;
+  background-color: #f8f9fa;
 }
 
-#app .container {
-  width: 376px;
-  height: 666px;
-  z-index: 100;
-
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 15px;
   background: white;
-  border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#app .container-view {
-  padding: 20px;
+.no-underline {
+  text-decoration: none;
+  color: inherit; 
 }
 
+.no-border {
+  border: none !important;
+}
+/* 
+.no-border-card {
+  border: none !important;
+} */
+
+.text-center {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.custom-button {
+  background: none;
+  border: none;
+  border-color: black;
+  margin-left: 1.20rem;
+  padding: 0;
+  color: black;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s, font-size 0.3s;;
+}
+
+.custom-button img {
+  margin-right: 8px; 
+}
+
+.custom-button:hover,
+.custom-button:focus,
+.custom-button:active {
+  background: none; 
+  color: black;
+  font-size: 1.3rem;
+}
+
+.custom-button-grey {
+  background-color: blue;
+  border: none;
+  color: white;
+}
+
+.custom-button-grey:hover,
+.custom-button-grey:focus,
+.custom-button-grey:active {
+  background-color: darkgrey; 
+  color: white;
+}
